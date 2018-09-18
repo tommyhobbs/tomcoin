@@ -1,0 +1,11 @@
+applications:
+  - path: ./
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+    memory: 64M
+    instances: 1
+    domain: mybluemix.net
+    name: tomcoin
+    host: tomcoin
+    stack: cflinuxfs2
+    env:
+      FORCE_HTTPS: true
