@@ -11,9 +11,17 @@
 <body><noscript>You need to enable JavaScript to run this app.</noscript>
   <img id="tomcoin" src="images/TomCoin_Gif_Large.gif" width="75%" height="auto">
   <a href="https://github.com/tommyhobbs/tomcoin" style="display:block"><img id="github" src="images/GitHub_32.png" alt="code" /></a>
-  <script type="application/json">
+  <script type="application/JavaScript">
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js');
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+          // Registration was successful
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+          // registration failed :(
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      });
     }
   </script>
 </body>
