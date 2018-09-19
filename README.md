@@ -2,6 +2,8 @@
 
 _A bare-bones html site intended to demonstrate how easy it is the make a PWA._
 
+![high five](https://media.giphy.com/media/10ZEx0FoCU2XVm/giphy.gif)
+
 ## Links
 
 - [Google Guide - The Web App Manifest](https://developers.google.com/web/fundamentals/web-app-manifest/)
