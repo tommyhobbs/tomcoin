@@ -8,9 +8,11 @@
   <title>Tom Coin</title>
 </head>
 
-<body><noscript>You need to enable JavaScript to run this app.</noscript>
-  <img id="tomcoin" src="images/TomCoin_Gif_Large.gif" width="75%" height="auto">
-  <a href="https://github.com/tommyhobbs/tomcoin" style="display:block"><img id="github" src="images/GitHub_32.png" alt="code" /></a>
+<body style="margin:0"><noscript>You need to enable JavaScript to run this app.</noscript>
+  <div style="display:grid; height: 100vh; grid-template-rows: 9fr 1fr; justify-items: center; align-items: center">
+    <img id="tomcoin" src="images/TomCoin_Gif_Large.gif" style="max-width: 75%; max-height: 75%">
+    <a href="https://github.com/tommyhobbs/tomcoin"><img id="github" src="images/GitHub_32.png" alt="code" /></a>
+  </div>
   <script type="application/JavaScript">
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
